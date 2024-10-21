@@ -1,0 +1,121 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page - Shake & Enjoy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="title">
+                <h1><a href="{% url 'main_page' %}" class="title-link">Shake & Enjoy</a></h1>
+            </div>
+            <div class="nav-links">
+                {% if user.is_authenticated %}
+                    <!-- 로그아웃 버튼을 POST 요청으로 유지 -->
+                    <form method="POST" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="nav-item logout-button">Logout</button>
+                    </form>
+                {% else %}
+                    <!-- 로그인 상태가 아닐 때 -->
+                    <a href="{% url 'login_page' %}" class="nav-item">Login</a>
+                {% endif %}
+                
+                <a href="{% url 'general_community' %}" class="nav-item">Community</a>
+                <a href="{% url 'search_page' %}" class="nav-item">Search</a>
+                <a href="{% url 'search_page' %}" class="nav-item">
+                    <img src="{% static 'main/search_icon.png' %}" alt="Search Icon" class="search-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="mypage-body">
+        <h1>Welcome, {{ user.username }}</h1><br>
+        <!-- 추가적인 사용자 정보 표시 -->
+        <hr class="separator">
+    </section>
+    <section class="mypage-preferences">
+        <h2>Select Your Cocktail Preferences</h2>
+    
+        <form method="POST" action="{% url 'save_preferences' %}">
+            {% csrf_token %}
+    
+            <!-- Base Liquor 체크박스 -->
+            <h3>Base Liquor</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="vodka" name="base_liquor" value="Vodka" {% if "Vodka" in base_liquor %}checked{% endif %}>
+                <label for="vodka">Vodka</label><br>
+    
+                <input type="checkbox" id="gin" name="base_liquor" value="Gin" {% if "Gin" in base_liquor %}checked{% endif %}>
+                <label for="gin">Gin</label><br>
+    
+                <input type="checkbox" id="tequila" name="base_liquor" value="Tequila" {% if "Tequila" in base_liquor %}checked{% endif %}>
+                <label for="tequila">Tequila</label><br>
+    
+                <input type="checkbox" id="whiskey" name="base_liquor" value="Whiskey" {% if "Whiskey" in base_liquor %}checked{% endif %}>
+                <label for="whiskey">Whiskey</label><br>
+    
+                <input type="checkbox" id="rum" name="base_liquor" value="Rum" {% if "Rum" in base_liquor %}checked{% endif %}>
+                <label for="rum">Rum</label><br>
+    
+                <input type="checkbox" id="liqueur" name="base_liquor" value="Liqueur" {% if "Liqueur" in base_liquor %}checked{% endif %}>
+                <label for="liqueur">Liqueur</label><br>
+            </div>
+            <br><hr class="separators"><br>
+            <!-- Alcohol Strength 체크박스 -->
+            <h3>Alcohol Strength</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="low" name="alcohol_strength" value="Low" {% if "Low" in alcohol_strength %}checked{% endif %}>
+                <label for="low">Low</label><br>
+    
+                <input type="checkbox" id="middle" name="alcohol_strength" value="Middle" {% if "Middle" in alcohol_strength %}checked{% endif %}>
+                <label for="middle">Middle</label><br>
+    
+                <input type="checkbox" id="high" name="alcohol_strength" value="High" {% if "High" in alcohol_strength %}checked{% endif %}>
+                <label for="high">High</label><br>
+            </div>
+            <br><hr class="separators"><br>
+            <!-- Glass 체크박스 -->
+            <h3>Glass</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="rock_glass" name="glass" value="Rock Glass" {% if "Rock Glass" in glass %}checked{% endif %}>
+                <label for="rock_glass">Rock Glass</label><br>
+    
+                <input type="checkbox" id="martini_glass" name="glass" value="Martini Glass" {% if "Martini Glass" in glass %}checked{% endif %}>
+                <label for="martini_glass">Martini Glass</label><br>
+    
+                <input type="checkbox" id="highball_glass" name="glass" value="Highball Glass" {% if "Highball Glass" in glass %}checked{% endif %}>
+                <label for="highball_glass">Highball Glass</label><br>
+    
+                <input type="checkbox" id="cocktail_glass" name="glass" value="Cocktail Glass" {% if "Cocktail Glass" in glass %}checked{% endif %}>
+                <label for="cocktail_glass">Cocktail Glass</label><br>
+            </div>
+            <br><hr class="separators"><br>
+            <!-- Technique 체크박스 -->
+            <h3>Technique</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="shaking" name="technique" value="Shaking" {% if "Shaking" in technique %}checked{% endif %}>
+                <label for="shaking">Shaking</label><br>
+    
+                <input type="checkbox" id="stir" name="technique" value="Stir" {% if "Stir" in technique %}checked{% endif %}>
+                <label for="stir">Stir</label><br>
+    
+                <input type="checkbox" id="build" name="technique" value="Build" {% if "Build" in technique %}checked{% endif %}>
+                <label for="build">Build</label><br>
+            </div>
+            <br><hr class="separators"><br>
+            <button type="submit" font-size="25px">Save Preferences</button>
+        </form>
+    </section>
+    
+    
+    
+</body>
+</html>

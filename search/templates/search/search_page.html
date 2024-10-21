@@ -1,0 +1,140 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Cocktails</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'search/styles.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="title">
+                <h1><a href="{% url 'main_page' %}" class="title-link">Shake & Enjoy</a></h1>
+            </div>
+            <div class="nav-links">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'my_page' %}" class="nav-item">[ {{ user.username }} ]</a>
+                    <form method="POST" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="nav-item logout-button">Logout</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login_page' %}" class="nav-item">Login</a>
+                {% endif %}
+                <a href="{% url 'general_community' %}" class="nav-item">Community</a>
+                <a href="{% url 'search_page' %}" class="nav-item">Search</a>
+                <a href="{% url 'search_page' %}" class="nav-item">
+                    <img src="{% static 'main/search_icon.png' %}" alt="Search Icon" class="search-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 검색바 -->
+    <section class="search-section">
+        <h2>Find Your Cocktails</h2>
+        <input type="text" id="search-input" placeholder="Enter search term...">
+    </section>
+
+    <!-- 검색 결과 리스트뷰 -->
+    <section class="search-results">
+        <ul id="results-list"></ul> <!-- 검색 결과가 이곳에 나타남 -->
+    </section>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const resultsList = document.getElementById('results-list');
+
+        // input 이벤트를 사용하여 사용자가 키를 입력할 때마다 호출
+        searchInput.addEventListener('input', function() {
+            const query = searchInput.value.trim(); // 입력값을 가져옴
+
+            // 빈 입력값일 경우 결과를 초기화
+            if (query === '') {
+                resultsList.innerHTML = '';
+                return;
+            }
+
+            // 검색어가 입력되면 서버에 요청
+            fetch(`/search/results/?query=${encodeURIComponent(query)}`, {
+                method: 'GET'
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultsList.innerHTML = ''; // 기존 결과 초기화
+                if (data.results.length > 0) {
+                    data.results.forEach(cocktail => {
+                        const listItem = document.createElement('li');
+                        listItem.classList.add('search-result-item');
+
+                        // 이미지 경로 설정 (메인 페이지 참고)
+                        let imagePath = '';
+                        if (cocktail.glass.includes('Martini Glass')) {
+                            imagePath = '{% static "main/martini_glass.png" %}';
+                        } else if (cocktail.glass.includes('Rock Glass')) {
+                            imagePath = '{% static "main/rock_glass.png" %}';
+                        } else if (cocktail.glass.includes('Cocktail Glass')) {
+                            imagePath = '{% static "main/cocktail_glass.png" %}';
+                        } else if (cocktail.glass.includes('Highball Glass')) {
+                            imagePath = '{% static "main/highball_glass.png" %}';
+                        } else {
+                            imagePath = '{% static "main/rock_glass.png" %}';
+                        }
+                        function getCookie(name) {
+                            let cookieValue = null;
+                            if (document.cookie && document.cookie !== '') {
+                                const cookies = document.cookie.split(';');
+                                for (let i = 0; i < cookies.length; i++) {
+                                    const cookie = cookies[i].trim();
+                                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                        break;
+                                    }
+                                }
+                            }
+                            return cookieValue;
+                        }
+
+                        // 검색된 키워드를 강조하는 함수
+                        function highlightMatch(text) {
+                            const regex = new RegExp(query, 'gi');  // 대소문자 구분 없이 검색
+                            return text.replace(regex, match => `<span class="highlight">${match}</span>`);
+                        }
+
+                        // 결과에 이미지 및 정보 추가
+                        listItem.innerHTML = `
+                            <img src="${imagePath}" alt="${cocktail.glass}">
+                            <div class="result-details">
+                                <form method="POST" action="/cocktail/${encodeURIComponent(cocktail.name)}/">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="${getCookie('csrftoken')}">
+                                    <button type="submit" class="cocktail-button">
+                                        <h3>${highlightMatch(cocktail.name)}</h3>
+                                    </button>
+                                </form>
+                                <p>Base Liquor: ${highlightMatch(cocktail.base_liquor)} |
+                                Glass: ${highlightMatch(cocktail.glass)} |
+                                Strength: ${highlightMatch(cocktail.alcohol_strength)}</p>
+                                ${cocktail.extra_info ? `<p class="additional-info">${highlightMatch(cocktail.extra_info)}</p>` : ''}
+                            </div>
+                        `;
+
+                        resultsList.appendChild(listItem);
+                    });
+                } else {
+                    // 결과가 없을 때 메시지 표시
+                    const noResultsItem = document.createElement('li');
+                    noResultsItem.textContent = 'No cocktails found.';
+                    resultsList.appendChild(noResultsItem);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+</body>
+</html>

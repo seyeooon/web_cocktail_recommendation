@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cocktail.name }} Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'community/styles.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="title">
+                <h1><a href="{% url 'main_page' %}" class="title-link">Shake & Enjoy</a></h1>
+            </div>
+            <div class="nav-links">
+                {% if user.is_authenticated %}
+                    <!-- 마이페이지로 이동하는 username 버튼 -->
+                    <a href="{% url 'my_page' %}" class="nav-item">[ {{ user.username }} ]</a>
+
+                    <!-- 로그아웃 버튼을 POST 요청으로 유지 -->
+                    <form method="POST" action="{% url 'logout' %}" class="logout-form">
+                        {% csrf_token %}
+                        <button type="submit" class="nav-item logout-button">Logout</button>
+                    </form>
+                {% else %}
+                    <!-- 로그인 상태가 아닐 때 -->
+                    <a href="{% url 'login_page' %}" class="nav-item">Login</a>
+                {% endif %}
+                
+                <a href="{% url 'general_community' %}" class="nav-item">Community</a>
+                <a href="{% url 'search_page' %}" class="nav-item">Search</a>
+                <a href="{% url 'search_page' %}" class="nav-item">
+                    <img src="{% static 'main/search_icon.png' %}" alt="Search Icon" class="search-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="cocktail-image-section">
+        {% if "Cocktail Glass" in cocktail.glass %}
+            <img src="{% static 'cocktail/cocktail_glass.png' %}" alt="Cocktail Glass" class="cocktail-image">
+        {% elif "Highball Glass" in cocktail.glass %}
+            <img src="{% static 'cocktail/highball_glass.png' %}" alt="Highball Glass" class="cocktail-image">
+        {% elif "Rock Glass" in cocktail.glass %}
+            <img src="{% static 'cocktail/rock_glass.png' %}" alt="Rock Glass" class="cocktail-image">
+        {% elif "Martini Glass" in cocktail.glass %}
+            <img src="{% static 'cocktail/martini_glass.png' %}" alt="Martini Glass" class="cocktail-image">
+        {% else %}
+            <img src="{% static 'cocktail/rock_glass.png' %}" alt="Default Glass" class="cocktail-image">
+        {% endif %}
+    </section>
+    
+    <section>
+        <h2>Share your opinions about " <span class="cocktail-name">{{ cocktail_name }}</span> "</h2>
+
+        <!-- 댓글 작성 폼 -->
+        <!-- cocktail_community.html -->
+        <form method="POST" action="{% url 'add_cocktail_comment' cocktail_name %}">
+            {% csrf_token %}
+            <input type="text" name="title" placeholder="The title of the comment" required>
+            <textarea name="content" placeholder="The content of the comment" required></textarea>
+            <button type="submit">Add Comment</button>
+        </form>
+
+        <!-- 기존 댓글 목록 -->
+        <ul>
+            {% for comment in comments %}
+            <li class="comment-box">
+                <strong>{{ comment.title }}</strong><br>
+                {{ comment.content }}<br>
+                User: {% if comment.user %} {{ comment.user.username }} {% else %} Unknown {% endif %} / Date: {{ comment.created_at }}
+                
+                <!-- 삭제 버튼을 오른쪽으로 옮기고 크기 작게 -->
+                <form method="POST" action="{% url 'delete_comment' comment.id cocktail_name %}">
+                    {% csrf_token %}
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>

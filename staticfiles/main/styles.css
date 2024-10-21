@@ -1,0 +1,183 @@
+/* Body and General Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+    background-color: #8B6D67; /* 배경색 설정 */
+    color: #dacac7; /* 기본 글자 색상 */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* 배경 투명하게 */
+}
+
+.title {
+    margin: 0;
+    font-size: 28px;
+    color: #dacac7; /* 제목 글자색 설정 */
+    text-align: center;
+    text-decoration: none;
+}
+
+.title-link {
+    color: #dacac7;  /* 글자 색을 제목과 동일하게 설정 */
+    text-decoration: none;  /* 언더라인 제거 */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #dacac7; /* 링크 글자색 설정 */
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* 검색 아이콘 스타일 */
+.search-icon {
+    width: 24px; /* 아이콘 크기 조정 */
+    height: 24px;
+    cursor: pointer; /* 클릭 가능 표시 */
+}
+
+
+/* 로그아웃 버튼 스타일을 nav-item과 동일하게 설정 */
+.logout-button {
+    color: #dacac7; /* 로그아웃 버튼 텍스트 색상 */
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+    font-size: 18px; /* 글자 크기 */
+    background: none; /* 배경 없음 */
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 클릭 가능 표시 */
+    padding: 0;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+    background-color: #8B6D67;
+    
+}
+
+
+/* Background Section */
+.background-section {
+    position: relative;
+    text-align: center;
+    color: #dacac7;
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+}
+
+.background-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5; /* 배경 이미지 약간 투명하게 */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-text h4 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.overlay-text p {
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #896A65;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #75554f; /* 버튼 호버 시 색상 */
+}
+.category-section {
+    margin-left : 20px;
+    margin-bottom: 0px; /* 하단 여백 제거 */
+    padding: 10; /* 패딩 제거 */
+}
+
+/* Category Buttons */
+.category-buttons button {
+    padding: 10px 70px ;
+    font-size: 18px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #8B6D67;
+    color: #dacac7;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #75554f;
+}
+
+/* Grid Styling */
+.grid-container {
+    display: flex;
+    overflow-x: scroll; /* 가로 스크롤 가능하도록 */
+    gap: 20px;
+    padding: 50px;
+}
+
+.grid-item {
+    flex: 0 0 250px; /* 아이템 크기 고정 */
+    padding: 50px;
+    border: 1px solid #dacac7;
+    text-align: center;
+}
+/* Glass Image Styling */
+.glass-image {
+    width: 100px;  /* 이미지 크기 조정 */
+    height: auto;
+    margin-bottom: 10px;  /* 이미지와 텍스트 간의 간격 */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 15px; /* 스크롤바 너비 */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #8B6D67; /* 스크롤바 트랙 색상 */
+    width: 10px; /* 스크롤바 너비 */
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px; /* 스크롤바 너비 */
+    background-color: #dacac7; /* 스크롤바 색상 */
+    border-radius: 3px; /* 스크롤바 모서리 둥글게 */
+}

@@ -1,0 +1,130 @@
+<!-- cocktail/templates/cocktail/cocktail_detail.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cocktail.name }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Montserrat 폰트 불러오기 -->
+    <link rel="stylesheet" href="{% static 'cocktail/styles.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar (로그인 버튼 제거) -->
+    <header>
+        <div class="navbar">
+            <div class="title">
+                <h1><a href="{% url 'main_page' %}" class="title-link">Shake & Enjoy</a></h1>
+            </div>
+            <div class="nav-links">
+                {% if user.is_authenticated %}
+                    <!-- 마이페이지로 이동하는 username 버튼 -->
+                    <a href="{% url 'my_page' %}" class="nav-item">[ {{ user.username }} ]</a>
+
+                    <!-- 로그아웃 버튼을 POST 요청으로 -->
+
+                    <form method="POST" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="nav-item logout-button">Logout</button>
+                    </form>
+                {% else %}
+                    <!-- 로그인 상태가 아닐 때 -->
+                    <a href="{% url 'login_page' %}" class="nav-item">Login</a>
+                {% endif %}
+                
+                <a href="{% url 'general_community' %}" class="nav-item">Community</a>
+                <a href="{% url 'search_page' %}" class="nav-item">Search</a>
+                <a href="{% url 'search_page' %}" class="nav-item">
+                    <img src="{% static 'main/search_icon.png' %}" alt="Search Icon" class="search-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <section class="cocktail-detail">
+            <!-- glass 정보에 따른 이미지 출력 -->
+            {% if "Cocktail Glass" in cocktail.glass %}
+                <img src="{% static 'cocktail/cocktail_glass.png' %}" alt="Cocktail Glass" class="cocktail-image">
+            {% elif "Highball Glass" in cocktail.glass %}
+                <img src="{% static 'cocktail/highball_glass.png' %}" alt="Highball Glass" class="cocktail-image">
+            {% elif "Rock Glass" in cocktail.glass %}
+                <img src="{% static 'cocktail/rock_glass.png' %}" alt="Rock Glass" class="cocktail-image">
+            {% elif "Martini Glass" in cocktail.glass %}
+                <img src="{% static 'cocktail/martini_glass.png' %}" alt="Martini Glass" class="cocktail-image">
+            {% else %}
+                <img src="{% static 'cocktail/rock_glass.png' %}" alt="Default Glass" class="cocktail-image">
+            {% endif %}
+        <h1>{{ cocktail_name }}</h1>
+        <hr class="separator">
+        <p><strong>Base Liquor:</strong> {{ cocktail.base_liquor }}</p>
+        <hr class="separator">
+        <p><strong>Ingredients:</strong></p>
+            <ul class="ingredient-list">
+                {% for ingredient in cocktail.ingredients %}
+                    <li>{{ ingredient }}</li>
+                {% endfor %}
+            </ul>
+            <hr class="separator">
+        <p><strong>Garnish:</strong> {{ cocktail.garnish }}</p>
+        <hr class="separator">
+        <p><strong>Alcohol Strength:</strong> {{ cocktail.alcohol_strength }}</p>
+        <hr class="separator">
+        <p><strong>Glass:</strong> {{ cocktail.glass }}</p>
+        <hr class="separator">
+        <p><strong>Technique:</strong> {{ cocktail.technique }}</p>
+        <hr class="separator">
+        <p><strong>Color:</strong> {{ cocktail.color }}</p>
+        <hr class="separator">
+        
+        {% if cocktail.recipe %}
+            <p><strong>Recipe:</strong></p>
+             <ul class="recipe-list">
+                {% for step in cocktail.recipe %}
+                    <li>{{ step }}</li>
+                {% endfor %}
+            </ul>
+            <hr class="separator">
+        {% endif %}
+
+
+
+       
+        <!-- Tip -->
+        {% if cocktail.tip %}
+            <p><strong>Tip:</strong> {{ cocktail.tip }}</p>
+            <hr class="separator">
+        {% endif %}
+        {% if cocktail.substitutes %}
+            <div class="substitutes-box">
+                <h2 class="underline">Substitute Recommendations</h2>
+                <ul class="substitutes-list">
+                    {% for ingredient, substitutes in cocktail.substitutes.items %}
+                        <li><strong>{{ ingredient }}:</strong> {{ substitutes|join:", " }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        {% if music_recommendations %}
+            <div class="music-recommendations-box">
+                <h2 class="underline">Recommended Music</h2>
+                <ul class="music-list">
+                    {% for music in music_recommendations %}
+                        <li>
+                            <a href="{{ music.track_url }}" class="music-link" target="_blank">{{ music.track_name }}</a> - {{ music.artist_name }}
+                        </li>
+                    {% endfor %}
+                </ul>
+                <!-- 작은 글씨로 안내 문구 추가 -->
+                <p class="music-note">Click on the name of the song, and enjoy the song ! </p>
+    
+            </div>
+        {% endif %}
+        <div class="community-button-section">
+            <a href="{% url 'cocktail_community' cocktail_name=cocktail_name %}" class="community-button">
+                Join the {{ cocktail_name }} Community
+            </a>
+        </div>
+    </section>
+</body>
+</html>

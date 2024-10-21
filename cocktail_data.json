@@ -1,0 +1,2712 @@
+[
+    {
+        "Paper Plane": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon whiskey(30ml), Amaro Nonino(30ml), Aperol(30ml), Lemon Juice(30ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Martini Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "If the ratio of each material is maintained at 1:1:1:1 and the capacity is changed, it can be made according to the size of the glass.",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ]
+            }
+        },
+        "Old fashioned": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Demerara(1bsp), Angostrua Bitters(4dashes), Bourbon Whiskey(55ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "1. Put ice in the glass first. 2. Divide whiskey 2-3 times and stir.",
+            "tip": "If you want to eat smoky, garnish with cinnamon sticks.",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ]
+            }
+        },
+        "Rose Collins": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(50ml), Lemon Juice(20ml), Demerara(7ml), Angostura Bitters(2dashes), Sparkling Water(Pull-up)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "If you twist the lemon peel with it, the flavor is better.",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Ward Eight": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Rye Whiskey(60ml), Lemon Juice(15ml), Orange Juice(15ml), Grenadine Syrup(2bsp)",
+            "garnish": "Maraschino Cherries",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "It's a light feeling of 'paper plane'.",
+            "substitutes": {
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Little Italy": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(45ml), Cynar(15ml), Sweet Vermouth(22.5ml), Angostura Bitters(2dashes)",
+            "garnish": "Maraschino Cherries",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red&Brown",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ],
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "God Father": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Blended Whiskey(55ml), Disaronno(16ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "French Connection": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(55ml), Disaronno(16ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ]
+            }
+        },
+        "Penicillin": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Blended Whiskey(30ml), Lemon Juice(17ml), Gingerhoneysyrup(15ml), Peat Whiskey(15ml)",
+            "garnish": "Orange Peel&Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "If you put the peat whisky separately at the end, the peat is more alive.",
+            "substitutes": {
+                "Lemon Juice": [
+                    "Lime Juice"
+                ]
+            }
+        },
+        "Old Pal": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Rye Whiskey(45ml), Dry Vermouth(22.5ml), Campari(22.5ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Cocktail name means old friend.",
+            "substitutes": {}
+        },
+        "Mint Julep": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(70ml), Mint(1 handful), Demerara(10ml), Angostura Bitters(2 dashes)",
+            "garnish": "Mint",
+            "alcohol_strength": "High",
+            "glass": "Stainless Steel Cup",
+            "color": "Green",
+            "technique": "Build",
+            "recipe": "1. Add all the ingredients and mash them with a mudler. 2. Fill the glass with crushed ice and put garnish on top.",
+            "tip": "",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ]
+            }
+        },
+        "Newyork Sour": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(70ml), Lemon Juice(30ml), Demerara(15ml), Angostura Bitters(2 dashes), Egg White, Red Wine(30ml)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red&Yellow",
+            "technique": "Shaking&Floating",
+            "recipe": "1. Add all ingredients except red wine and shake. 2. Float red wine using a baspoon.",
+            "tip": "",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ], 
+                "Lemon Juice": [
+                    "Lime Juice"
+                ]
+            }
+        },
+        "Irish Made": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Cucumber(2 pieces), Irish Whiskey(60ml), St-germain(15ml), Lemon Juice(22.5ml), Suger Syrup(22.5ml)",
+            "garnish": "Cucumber Slice",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "*Mash cucumber with mudler after adding all the ingredients.",
+            "tip": "",
+            "substitutes": {
+                "Lemon Juice": [
+                    "Lime Juice"
+                ]
+            }
+        },
+        "Mocha Martini": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(45ml), Espresso(30ml), Baileys(15ml), Cacao Brown Liquer(15ml), Whipped Cream(15ml), Maple Syrup(1tsp)",
+            "garnish": "Cocoa Powder",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Brown",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Because it contains whipped cream, shake it to make a lot of foam.",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ]
+            }
+        },
+        "Manhattan": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Rye Whiskey(50ml), Sweet Vermouth(20ml), Angostura Bitters(2 dashes), Orange Bitters(1 dash)",
+            "garnish": "Maraschino Cherries",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red&Brown",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "If you coat the lip and column of the glass with orange peel oil, you can enjoy the cocktail more.",
+            "substitutes": {
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Whiskey Smash": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Lemon Wedge(3ea), Mint leaves(4ea), Bourbon Whiskey(50ml), Suger Syrup(10ml)",
+            "garnish": "Mint",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "*Mash ingredients with mudler after adding all of them.",
+            "tip": "",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ]
+            }
+        },
+        "SideCar": {
+            "base_liquor": "Brandy",
+            "ingredients": "Brandy(45ml), Cointreau(17ml), Lemon Juice(15ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange&Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "If the cocktail is too sour, add a little sugar syrup.",
+            "substitutes": {
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ]
+            }
+        },
+        "Brandy Cruster": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(60ml), Luxardo(1bsp), Grand Marnier(20ml), Lemon Juice(7.5ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange&Yellow",
+            "technique": "Throwing",
+            "recipe": "Rim the sugar in the lip of the glass.",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ]
+            }
+        },
+        "B&B": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(50ml), Benedictin DOM(20ml)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ]
+            }
+        },
+        "Between the Sheets": {
+            "base_liquor": "Brandy",
+            "ingredients": "Brandy(15ml), White Rum(15ml), Cointreau(15ml), Lemon Juice(15ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "You can use Triple Sec instead of Cointreau.",
+            "tip": "It's a sedative drink that you drink before you go to bed.",
+            "substitutes": {
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ]
+            }
+        },
+        "Brandy Alexander": {
+            "base_liquor": "Brandy",
+            "ingredients": "Brandy(30ml), Liquer of Cacao White(30ml), Milk(30ml)",
+            "garnish": "Nutmeg",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Brown",
+            "technique": "Shaking",
+            "recipe": "nan",
+            "tip": "It is better to mix milk with cream in an appropriate ratio.",
+            "substitutes": {}
+        },
+        "Jack Rose": {
+            "base_liquor": "Calvados",
+            "ingredients": "Calvados(50ml), Lemon Juice(15ml), Lime Juice(7.5ml), Suger Syrup(7.5ml), Grenadin Syrup(5ml), Orange Bitters(1 dash)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Black Russian": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(45ml), Kalua(30ml), Orange Bitters(2 dashes)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Brown",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Elderflower Cosmo": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(45ml), Elderflower Liquer(30ml), Pineapple Juice(20ml), Lime Juice(7.5ml)",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Sea Breeze": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(45ml), Cranberry Juice(90ml), Grapefruit Juice(45ml)",
+            "garnish": "Lime Wheel",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "It is also delicious to add aperol as a kick.",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Espresso Martini": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(40ml), Espresso(30ml), Kalua(15ml), Sugar Syrup(7ml)",
+            "garnish": "Coffee Bean",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Brown",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "You can use other coffee liqueurs instead of kalua.",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Long Island Icetea": {
+            "base_liquor": "Jin&Vodka&Tequila&Rum",
+            "ingredients": "Jin(15ml), Tequila(15ml), Vodka(15ml), White Rum(15ml), Triple Sec(15ml), Lemon Juice(30ml), Sugar Syrup(15ml), Coke",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Brown",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except coke. 2. Pull up the coke.",
+            "tip": "You can use Cointru instead of Triple Sec.",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Jin Fizz": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(43ml), Lemon Juice(20ml), Sugar Syrup(7ml), Sparkling Water",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except sparkling water. 2. Pull up the sparkling water.",
+            "tip": "Adjust sugar syrup to the acidity of lemon juice.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "French75": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(43ml), Lemon Juice(20ml), Sugar Syrup(7ml), Prosecco",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Chanpagne Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except prosecco. 2. Pull up the prosecco.",
+            "tip": "Prosecco is another to Champagne or white wines available., It's similar to Jin Fizz, but it's a less sour cocktail.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Last Word": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(30ml), Chartreuse Green(30ml), Luxardo(30ml), Lime Juice(30ml)",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Negroni": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(30ml), Sweet Vermouth(30ml), Campari(30ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Since sweet vermouth is a wine base, when mixed with water, the acidity comes up.",
+            "substitutes": {
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Boulevardier": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(30ml), Sweet Vermouth(30ml), Campari(30ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ],
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Tuxedo No.2": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(60ml), Dry Vermouth(22.5ml), Luxardo(7.5ml)",
+            "garnish": "Orange Peel&Cherry",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Transparent",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "If you are going to eat it dry, reduce Luxardo to 5ml and manufacture it.",
+            "substitutes": {}
+        },
+        "Singapore Sling": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(40ml), Cherry Heering(15ml), Cointreau(15ml), Benedictin(10ml), Grenadin(10ml), Pineapple Juice(40ml), Lime Juice(15ml), Angostura Bitters(1 dashes), Luxardo(1bsp)",
+            "garnish": "Pineapple&Cherry",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Pilsner Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Floating the darkrum at the end is the original recipe.",
+            "substitutes": {
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Dry Martini": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(70ml), Dry Vermouth(13ml)",
+            "garnish": "Olive&Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Transparent",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Select and manufacture gin according to the feeling of the desired cocktail.",
+            "substitutes": {}
+        },
+        "Rumba": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(30ml), White Rum(22.5ml), Lime Juice(30ml), Grenadin(15ml), Sugar Syrup(7.5ml)",
+            "garnish": "Lime Wedge",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Royal Smile": {
+            "base_liquor": "Jin&Calvados",
+            "ingredients": "Jin(30ml), Calvados(30ml), Lemon Juice(15ml), Sugar Syrup(7.5ml), Grenadin(5ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "April Violet Perfume": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(30ml), St.germain(30ml), Lemon Juice(20ml), Rose Syrup(15ml), Grapefruit Bitters(1dash)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Pink",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "The original recipe uses impure gin.",
+            "substitutes": {}
+        },
+        "Too Soon": {
+            "base_liquor": "Gin",
+            "ingredients": "Orange Juice(10ml), Jin(30ml), Cynar(30ml), Lemon Juice(22.5ml), Sugar Syrup(7.5ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "You can shake two slices of orange instead of orange juice.",
+            "substitutes": {
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Sunflower": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(20ml), Triple Sec(20ml), St.Germain(20ml), Lemon Juice(20ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "1. Rinse the glass with absinthe. 2. Empty the glass and pour the shakedown ingredients.",
+            "tip": "",
+            "substitutes": {
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ]
+            }
+        },
+        "Jin Basil Smash": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(55ml), Basil(a half of handful), Lemon Juice(22.5ml), Sugar Syrup(12.5ml)",
+            "garnish": "Basil",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Green",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Mojito": {
+            "base_liquor": "Rum",
+            "ingredients": "Lime(a half), Rum(40ml), Sugar Syrup(30ml), Lime Juice(20ml), Mint(a handful), Sparkling Water",
+            "garnish": "Mint&Lime",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "1. Muddling the lime half. 2. Add half-zoom of mint and muddle with spoon. 3. Fill in the crushed ice. 4. Fill it with carbonated water and garnish it.",
+            "tip": "If you mix sugar syrup with fashion fruit syrup and make a cocktail, you can make it more colorful.",
+            "substitutes": {
+                "Rum": [
+                    "Cachaca",
+                    "Tequila"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Mojito Virgin": {
+            "base_liquor": "Rum",
+            "ingredients": "Lime(a half), Sugar Syrup(30ml), Lime Juice(20ml), Mint(a handful), Sparkling Water&Sprite",
+            "garnish": "Mint&Lime",
+            "alcohol_strength": "zero",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "1. Muddling the lime half. 2. Add half-zoom of mint and muddle with spoon. 3. Fill in the crushed ice. 4. Fill with sparkling water and sprites 1:1 and garnish.",
+            "tip": "If you mix sugar syrup with fashion fruit syrup and make a cocktail, you can make it more colorful.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Boston Cooler": {
+            "base_liquor": "Rum",
+            "ingredients": "Rum(40ml), Lemon Juice(17ml), Sugar Syrup(5-7ml), Angostura Bitters(1 dashes), Ginger Sparkling Water",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "1. Shake all ingredients except ginger ale. 2. Pull up ginger ale.",
+            "tip": "If you want to drink more dry, add sparkling water instead of ginger ale. Sugar syrup is determined by the acidity of the lemon.",
+            "substitutes": {
+                "Rum": [
+                    "Cachaca",
+                    "Tequila"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Highland Cooler": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Whiskey(40ml), Lemon Juice(17ml), Sugar Syrup(5-7ml), Angostura Bitters(1 dashes), Ginger Sparkling Water",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "1. Shake all ingredients except ginger ale. 2. Pull up ginger ale.",
+            "tip": "If you want to drink more dry, add sparkling water instead of ginger ale. Sugar syrup is determined by the acidity of the lemon.",
+            "substitutes": {
+                "Whiskey": [
+                    "Bourbon",
+                    "Rye Whiskey"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "YellowBird": {
+            "base_liquor": "Rum",
+            "ingredients": "White Rum(30ml), Triple Sec(15ml), Lime Juice(15ml), Galliano(15ml)",
+            "garnish": "Maraschino Cherries",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Maitai": {
+            "base_liquor": "Rum",
+            "ingredients": "Gold Rum(40ml), Cointreau(15ml), Lime Juice(30ml), Orgeat Syrup(15ml), Dark Rum(15ml)",
+            "garnish": "Mint&Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "Add the bitters to suit your taste.",
+            "tip": "You can float the dark rum separately.",
+            "substitutes": {
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Pinacolada": {
+            "base_liquor": "Rum",
+            "ingredients": "Rum(45ml), Pineapple Juice(90ml), Coconut Syrup(30ml), Lemon Juice(7.5ml), Sugar Syrup(15ml), Milk(45ml)",
+            "garnish": "Pineapple",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Blending",
+            "recipe": "1. Add all the ingredients and add one and a half scoops of crushed ice and mix thoroughly.",
+            "tip": "",
+            "substitutes": {
+                "Rum": [
+                    "Cachaca",
+                    "Tequila"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Naked and Famous": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(22.5ml), Aperol(22.5ml), Chartreuse Yellow(22.5ml), Lime Juice(22.5ml)",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red&Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Peach Tea": {
+            "base_liquor": "Rum",
+            "ingredients": "Havana Rum(45ml), Remy Martin(15ml), PeachTree(15ml), BlackTea(30ml), Lemon Juice(10ml), Sugar Syrup(7.5ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "*If the tea is warm, add the ingredients while chilling the shaker.",
+            "tip": "",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Peach Crush": {
+            "base_liquor": "Liqueur",
+            "ingredients": "PeachTree(45ml), CranberryJuice(60ml), Sugar Syrup(20ml), Lemon Juice(20ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "It's okay to make it with a build technique.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Bergamot Collins": {
+            "base_liquor": "Liqueur",
+            "ingredients": "\uc774\ud0c8\ub9ac\ucfe0\uc2a4(30ml), \ub9b4\ub81b(30ml), \ub808\ubaac\uc999(20ml), \uc124\ud0d5\uc2dc\ub7fd(10ml), \ud0c4\uc0b0\uc218",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except sparkling water. 2. Pull up the sparkling water.",
+            "tip": "If you want to lower the alcohol content further, you can reduce the amount of alcohol and add apple juice instead.",
+            "substitutes": {}
+        },
+        "Elderflower Collins": {
+            "base_liquor": "Liqueur",
+            "ingredients": "St.Germain(30ml), Old Tom Jin(30ml), Lemon Juice(20ml), Sugar Syrup(10ml) , Sparkling Water",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except sparkling water. 2. Pull up the sparkling water.",
+            "tip": "",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Aperol Spirits": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Aperol(30ml), Prosecco(60ml), Sparkling Water(30ml)",
+            "garnish": "Orange Wheel",
+            "alcohol_strength": "Low",
+            "glass": "Wine Glass",
+            "color": "Orange",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "Enjoy by adjusting the proportion of ingredients to suit your taste.",
+            "substitutes": {
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Kir Royale": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Cassis(15ml), Prosecco",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Low",
+            "glass": "Champagne Glass",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Kir Imperial": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Chambord(15ml), Prosecco",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Low",
+            "glass": "Champagne Glass",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Kir": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Cassis(15ml), White Wine",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Low",
+            "glass": "Champagne Glass",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Pisco Sour": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Pisco(60ml), Lemon Juice(30ml), Sugar Syrup(15ml), Angostura Bitters(4 dashes), Egg White",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "*It's okay to take out egg whites and enjoy sharp cocktails according to your taste.",
+            "tip": "This cocktail, which originated in South America, has a slightly different recipe from region to region. Peru uses lemon juice and no bitters, but Chile uses lime juice and bitters",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "KingSton Club": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Drambuie(45ml), Pineapple Juice(45ml), Lime Juice(22.5ml), Pernet(5ml), Angostura Bitters(3 dashes), Sparkling Water",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except sparkling water. 2. Pull up the sparkling water.",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Spumoni": {
+            "base_liquor": "Liqueur",
+            "ingredients": "\uce84\ud30c\ub9ac(40ml), \uc790\ubabd\uc8fc\uc2a4(60ml), \ud1a0\ub2c9\uc6cc\ud130",
+            "garnish": "Grapefruit Peel",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Baileys Milk": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Baileys(30ml), Milk(60ml), Angostura Bitters(1 dash)",
+            "garnish": "Cocoa Powder",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "White",
+            "technique": "Build",
+            "recipe": "*It becomes a softer cocktail when manufactured using a shaking technique.",
+            "tip": "You can put it in a cocktail glass.",
+            "substitutes": {}
+        },
+        "Baileys Coffee": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Baileys(30ml), Milk(60ml), Espresso(30ml), Angostura Bitters(1 dash)",
+            "garnish": "Cocoa Powder",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Brown",
+            "technique": "Build",
+            "recipe": "*It becomes a softer cocktail when manufactured using a shaking technique.",
+            "tip": "You can put it in a cocktail glass.",
+            "substitutes": {}
+        },
+        "June Bug": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Midori(30ml), Malibu(15ml), Banana Liqueur(15ml), Lemon Juice(30ml), Pineapple Juice(60ml)",
+            "garnish": "Pineapple Wedge&Cherry",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Green",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Purple Garden": {
+            "base_liquor": "Liqueur",
+            "ingredients": "St.Germain(20ml), Lemon Juice(20ml), Apple Juice(20ml), Shine Muscat(3ea), Sugar Syrup(7.5ml), Sparkling Water, Impusing Gin(30ml)",
+            "garnish": "Cucumber&Rosemary",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow&Purple",
+            "technique": "Shaking&Floating",
+            "recipe": "1. Shake ingredients except gin and sparkling water. 2. Pull up the sparkling water. 3. Float the gin.",
+            "tip": "It has a similar feeling to a dermis, and it is okay to use unimpused gin.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Rich Lady": {
+            "base_liquor": "Liqueur",
+            "ingredients": "KwaiFeh(40ml), White Rum(20ml), Pomegranate Syrup(15ml), Sugar Syrup(5ml), Lemon Juice(20ml), Milk(40ml)",
+            "garnish": "Grapefruit Peel&Cherry",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Pink",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Little Picnic": {
+            "base_liquor": "Liqueur",
+            "ingredients": "KwaiFeh(30ml), Gin(20ml), Lilet(20ml), Lemon Juice(20ml), Peach Juice(20ml), Sparkling Water, Rose Syrup(5ml)",
+            "garnish": "Mint&Rose",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow&Pink",
+            "technique": "Shaking&Floating",
+            "recipe": "1. Shake ingredients except rose syrup and sparkling water. 2. Pull up the sparkling water. 3. Float the rose syrup.",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "John Bak": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Midori(30ml), Light Rum(15ml), Frangelico(15ml), Pineapple Juice(30ml), Lemon Juice(15ml), Maple Syrup(10ml), Walnut Bitters(1 dash), Milk(15ml)",
+            "garnish": "Cinamon Powder",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Green",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Ms, Blue Sky": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Limonce(30ml), Vodka(20ml), Lemon Juice(15ml), Passionfruit Syrup(10ml), Sugar Syrup(10ml), Milk(15ml), Cream(15ml), OrangeFlowerWater(1 dash), Blue Curacao(10ml)",
+            "garnish": "Orange Peel&Lemon Peel",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Blue",
+            "technique": "Shaking",
+            "recipe": "1. Shake the ingredients except blue curacao. 2. Pour blue curacao first. 3. Pour the contents of the shaker over it.",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Lemon Tree": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Limonce(45ml), Vodka(30ml), Lemon Juice(15ml), Orange Juice(30ml), Cassis(30ml), Sparkling Water",
+            "garnish": "Rosemary&Berry&LemonWheel&LimeWheel",
+            "alcohol_strength": "Middle",
+            "glass": "Wine Glass",
+            "color": "Red&Orange",
+            "technique": "Shaking",
+            "recipe": "1. Shake the ingredients except cassis. 2. Pour cassis first. 3. Pour the contents of the shaker over it.",
+            "tip": "It's okay to make it with a build.",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Bloody Mary": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(50ml), Tomato Juice(100ml), Lemon Juice(10ml), Uster Souse(2 dashes), Tabasco(2 dashes), Black  Pepper(A bit)",
+            "garnish": "Salery",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "It may be manufactured using a shaking technique.",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Caipirinha": {
+            "base_liquor": "Rum",
+            "ingredients": "Lime(A half), Cachaca Rum(50ml), Sugar Syrup(25ml)",
+            "garnish": "Lime Wheel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Green",
+            "technique": "Build",
+            "recipe": "1. Add lime first and muddle. 2. Add the remaining ingredients and fill with crushed ice. 3. Stir well with a barspoon.",
+            "tip": "You can use other rums, but the basic thing about this cocktail is to use good cachaa rum.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Caipiroska": {
+            "base_liquor": "Vodka",
+            "ingredients": "Lime(A half), Vodka(50ml), Sugar Syrup(25ml)",
+            "garnish": "Lime Wheel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Green",
+            "technique": "Build",
+            "recipe": "1. Add lime first and muddle. 2. Add the remaining ingredients and fill with crushed ice. 3. Stir well with a barspoon.",
+            "tip": "The cocktail, created for marketing purposes by the Swedish vodka brand, has been a great success in South America and other countries.",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Cosmopolitan": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(30ml), Triple Sec(15ml), Lime Juice(15ml), Cranberry Juice(30ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Vodka with a citrus scent suits it better.",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Dark&Stomy": {
+            "base_liquor": "Rum",
+            "ingredients": "Gold Rum(50ml), Lime Juice(25ml), Ginger Beer",
+            "garnish": "Lime Wedge",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Brown",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "Dark and Stormy is a brand name for rum.",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Daiquiri": {
+            "base_liquor": "Rum",
+            "ingredients": "White Rum(50ml), Lime Juice(25ml), Sugar Syrup(25ml)",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "El Presendnte": {
+            "base_liquor": "Rum",
+            "ingredients": "Rum(40ml), Dry Vermouth(20ml), Cointreau(10ml), Grenadin Syrup(5ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "It is good to drink before meals because it is dry.",
+            "substitutes": {
+                "Rum": [
+                    "Cachaca",
+                    "Tequila"
+                ],
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ]
+            }
+        },
+        "Mosco Mule": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(60ml), Lime Juice(18ml), Ginger Beer",
+            "garnish": "Lime&Cinnamon Stick",
+            "alcohol_strength": "Middle",
+            "glass": "Copper Cup",
+            "color": "Yellow&Brown",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "It is a cocktail made by brand representatives of ingredients that were not sold well at the time, and sales increased a lot.",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "London Mule": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(60ml), Lime Juice(18ml), Ginger Beer",
+            "garnish": "Lime&Cinnamon Stick",
+            "alcohol_strength": "Middle",
+            "glass": "Copper Cup",
+            "color": "Yellow&Brown",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Sazerac": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Cognac(50ml), Absinthe(15ml), Sugar Syrup(10ml), Angostura Bitters(2 dashes)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red",
+            "technique": "Stir",
+            "recipe": "1. Put Absinthe and ice in the glass first and rinse. 2. Stir the rest of the ingredients in the mixing glass. 3. Empty the glass containing Absinthe and pour the stirred ingredients.",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Tom Collins": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(50ml), Lemon Juice(25ml), Sugar Syrup(25ml), Sparkling Water",
+            "garnish": "Lemon Peel&Cherry",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except sparkling water. 2. Pull up the sparkling water.",
+            "tip": "",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ],
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Vesper": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(60ml), Vodka(20ml), Lillet Blanc(10ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Vieux Carre": {
+            "base_liquor": "Cognac&Whiskey",
+            "ingredients": "Cognac(25ml), Whiskey(25ml), Sweet Vermouth(25ml), Benedictin(10ml), Peychaud's Bitters(2 dashes), Angostura Bitters(1 dash)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Whiskey can be used either Bourbon or Rye.",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ],
+                "Whiskey": [
+                    "Bourbon",
+                    "Rye Whiskey"
+                ],
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Whiskey Sour": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(40ml), Lemon Juice(20ml), Sugar Syrup(20ml), Angostura Bitters(2 dashes), Egg Whtie",
+            "garnish": "Lemon Peel&Bitters",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Egg whites are ingredients for a soft texture. Therefore, it may be manufactured without this, but you can enjoy a cocktail with a sharp texture.",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "White Lady": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(40ml), Triple Sec(15ml), Lemon Juice(25ml), Sugar Syrup(10ml), Egg White",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Egg whites are ingredients for a soft texture. Therefore, it may be manufactured without this, but you can enjoy a cocktail with a sharp texture.",
+            "substitutes": {
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Zombie": {
+            "base_liquor": "Rum",
+            "ingredients": "2 bsp), Angostura Bitters(3 dashes), Mint(a half of handful",
+            "garnish": "Mint",
+            "alcohol_strength": "High",
+            "glass": "Tiki mugs",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Bellini": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Peach Juice(30ml), Prosecco(100ml)",
+            "garnish": "-",
+            "alcohol_strength": "Low",
+            "glass": "Champagne Glass",
+            "color": "Orange",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Bicicletta": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Campari(50ml), White Wine(40ml), Sparkling Water(40ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Low",
+            "glass": "Wine Glass",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "* Fill the glass with ice first and chill.",
+            "tip": "",
+            "substitutes": {
+                "Sparkling Water": [
+                    "Club Soda",
+                    "Tonic Water"
+                ]
+            }
+        },
+        "Cuba Libre": {
+            "base_liquor": "Rum",
+            "ingredients": "Rum(50ml), Lime Juice(20ml), Coke",
+            "garnish": "Lime Wheel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Brown",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Rum": [
+                    "Cachaca",
+                    "Tequila"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Grey Hound": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(50ml), Grapefruit Juice(100ml)",
+            "garnish": "Grapefruit Wheel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Orange",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Margarita": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(60ml), Cointreau(15ml), Lime Juice(30ml), Agave Syrup(15ml)",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "*According to your preference, you can decorate the salt on the rim of the glass.",
+            "tip": "",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Agave Syrup": [
+                    "Honey Syrup",
+                    "Simple Syrup"
+                ]
+            }
+        },
+        "Horse's Neck": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(50ml), Ginger Beer(100ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ]
+            }
+        },
+        "Mimosa": {
+            "base_liquor": "Wine",
+            "ingredients": "Champagne(80ml), Orange Juice(40ml)",
+            "garnish": "-",
+            "alcohol_strength": "Low",
+            "glass": "Champagne Glass",
+            "color": "Orange",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "Use champagne with no sweetness.",
+            "substitutes": {
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Stone Fence": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(50ml), Cidre Brut(100ml)",
+            "garnish": "-",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Yellow",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "Cidre Brut is a fermented apple with a pungent taste to which nothing is added.",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ]
+            }
+        },
+        "White Negroni": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(30ml), Suze(30ml), Lillet(30ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Suze is a French liquor based on gentian root.",
+            "substitutes": {}
+        },
+        "Breakfast Martini": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(50ml), Triple Sec(15ml), Lemon Juice(15ml), Orange Jam(1bsp)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ]
+            }
+        },
+        "Gin-gin Mule": {
+            "base_liquor": "Gin",
+            "ingredients": "Jin(50ml), Mint(a half of handful), Lime Juice(15ml), Sugar Syrup(15ml), Ginger Beer",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Green",
+            "technique": "Shaking",
+            "recipe": "1. Shake ingredients except Ginger Beer. 2. Pull up the Ginger Beer.",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Green Beast": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Absinthe(17ml), Sugar Syrup(17ml), Lime Juice(35ml), Water(70ml)",
+            "garnish": "Cucumber Slice",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Green",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "If you want more cucumber scent, you can put it in together and shake it.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Tommy's Margarita": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(60ml), Lime Juice(25ml), Agave Syrup(15ml)",
+            "garnish": "Lime Wedge",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Agave Syrup": [
+                    "Honey Syrup",
+                    "Simple Syrup"
+                ]
+            }
+        },
+        "Brass Monkey": {
+            "base_liquor": "Liqueur",
+            "ingredients": "\ub9e5\uc8fc(120ml), \uc624\ub80c\uc9c0\uc8fc\uc2a4(80ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Orange",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Doido": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Sweet Vermouth(50ml), Beer(200ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Summer Beer": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(20ml), Orange Juice(20ml), Lemon Juice(10ml), Sugar Syrup(10ml), Beer(250ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "White Russian": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(60ml), Kalua(30ml), Cream(90ml)",
+            "garnish": "Coffee Bean",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Brown&White",
+            "technique": "Build",
+            "recipe": "*Pour the cream at the end.",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Banker's Lunch": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(45ml), Dry Vermouth(15ml), Cointreau(15ml), Grapefruit Juice(45ml)",
+            "garnish": "Grapefruit Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ]
+            }
+        },
+        "Turf Club": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(60ml), Dry Vermouth(22.5ml), Maraschino(7.5ml), Absinthe(2 dashes), Orange Bitters(2 dashes)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Transparent",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ]
+            }
+        },
+        "Bensonhurst": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Rye Whiskey(60ml), Dry Vermouth(30ml), Maraschino(2bsp), Cynar(1bsp)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Using bourbon whisky makes a slightly sweeter cocktail.",
+            "substitutes": {}
+        },
+        "Green Point": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Rye Whiskey(60ml), Yellow Chartreuse(15ml), Sweet Vermouth(15ml), Angostura Bitters(1 dash), Orange Bitters(1 dash)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Using bourbon whisky makes a slightly sweeter cocktail.",
+            "substitutes": {
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Lemon Drop": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(50ml), Triple Sec(15ml), Lemon Juice(30ml), Sugar Syrup(20ml)",
+            "garnish": "Sugar Limming",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "*Rim the sugar before making and chill.",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Pegu Club": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(50ml), Orange Curacao(22.5ml), Lime Juice(15ml), Angostura Bitters(1 dash), Orange Bitters(1 dash)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Division Bell": {
+            "base_liquor": "Tequila",
+            "ingredients": "Mezcal(30ml), Aperol(22.5ml), Maraschino(7.5ml), Lime Juice(22.5ml)",
+            "garnish": "Grapefruit Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Mezcal is a type of tequila.",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Preakness": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Rye Whiskey(45ml), Sweet Vermouth(22.5ml), Benedictin(7.5ml), Angostura Bitters(1 dash)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Red",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "Using bourbon whisky makes it a bit sweeter.",
+            "substitutes": {
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Yellow Daisy": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(40ml), Dry Vermouth(40ml), Grand Marnier(20ml), Absinthe(3 dashes)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ]
+            }
+        },
+        "Banana Alexander": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(45ml), Banana Liquer(30ml), Cream(25ml)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ]
+            }
+        },
+        "Hawaiian Stone Sour": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(45ml), Lemon Juice(22.5ml), Pineapple Juice(30ml), Sugar Syrup(15ml)",
+            "garnish": "Pineapple&Cherry",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Monte Cassino": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Rye Whiskey(22.5ml), Benedictin(22.5ml), Chartreuse Yellow(22.5ml), Lemon Juice(22.5ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {}
+        },
+        "Boston Sour": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Bourbon Whiskey(60ml), Lemon Juice(22.5ml), Sugar Syrup(15ml), Egg White",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Shake to form enough.",
+            "substitutes": {
+                "Bourbon Whiskey": [
+                    "Rye Whiskey",
+                    "Scotch"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Scotch Sour": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Scotch Whiskey(60ml), Lemon Juice(25ml), Sugar Syrup(15ml), Egg White",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Shake to form enough.",
+            "substitutes": {
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "London Sour": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Scotch Whiskey(60ml), Orange Juice(75ml), Lemon Juice(15ml), Orgeat Syrup(5ml), Sugar Syrup(5ml)",
+            "garnish": "Orange&Mint",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Tequila Sour": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(60ml), Lemon Juice(30ml), Sugar Syrup(15ml), Egg White",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Shake to form enough.",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Great Gatsby": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(25ml), Lillet(25ml), Grapefruit Juice(60ml)",
+            "garnish": "Orange Wheel",
+            "alcohol_strength": "Low",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Charlie Chaplin": {
+            "base_liquor": "Gin",
+            "ingredients": "Sloe Gin(30ml), Apricot Liqueur(30ml), Lime Juice(30ml)",
+            "garnish": "Lime Wheel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Blue Eyed Martini": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(45ml), Gin(15ml), Dry Vermouth(12.5ml), Blue Curacao(2.5ml)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Blue",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ]
+            }
+        },
+        "Blue Lady": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Blue Curacao(45ml), Gin(30ml), Lemon Juice(22.5ml), Egg White",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Blue",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Shake to form enough.",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ]
+            }
+        },
+        "Blue Velvet Margarita": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(50ml), Triple Sec(12.5ml), Blue Curacao(12.5ml), Lime Juice(25ml)",
+            "garnish": "Lime Wedge",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Blue",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Ink Cocktail #2": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(50ml), Blue Curacao(15ml), Cranberry Juice(40ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Blue",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Sidecaer No. Blue": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(50ml), Blue Curacao(22.5ml), Lemon Juice(22.5ml), Sugar Syrup(7.5ml), Egg White",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Green",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "The sidecar recipe is to add triple sec instead of blue curaso.",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Easy Speak": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Whiskey(60ml), Cynar(22.5ml), Sugar Syrup(10ml), Chocolate Bitters(4 dashes)",
+            "garnish": "Lemon Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Whiskey": [
+                    "Bourbon",
+                    "Rye Whiskey"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Cin-Cyn": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(30ml), Cynar(30ml), Sweet Vermouth(30ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ],
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Pini": {
+            "base_liquor": "Liqueur",
+            "ingredients": "Pisco(50ml), Cognac(12.5ml), Cacao white Liqueur(7.5ml), Sugar Syrup(5ml)",
+            "garnish": "Maraschino Cherries",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Bernice": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(50ml), Galliano(7.5ml), Lime Juice(15ml), Sugar Syrup(10ml), Absinthe(1 dash)",
+            "garnish": "Mint",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Green",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Atta Boy Cocktail": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(60ml), Dry Vermouth(30ml), Grenadine Syrup(1bsp)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Transparent",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ]
+            }
+        },
+        "The Business": {
+            "base_liquor": "Gin",
+            "ingredients": "Gin(60ml), Honey(20ml), Lime Juice(30ml)",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Fandango": {
+            "base_liquor": "Gin&Vodka",
+            "ingredients": "Gin(22.5ml), Vodka(22.5ml), Chartreuse Yellow(22.5ml)",
+            "garnish": "Mint",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Gin": [
+                    "Vodka",
+                    "Tequila"
+                ],
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Flat White Martini": {
+            "base_liquor": "Vodka",
+            "ingredients": "Baileys(45ml), Vodka(30ml), Espresso(30ml)",
+            "garnish": "Coffee Bean",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "Fur Collar": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(60ml), Apricot Liqueur(15ml), Orange Juice(22.5ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Madras": {
+            "base_liquor": "Vodka",
+            "ingredients": "Vodka(60ml), Cranberry Juice(90ml), Orange Juice(60ml)",
+            "garnish": "Orange Wheel",
+            "alcohol_strength": "Low",
+            "glass": "Long Drink(Highball Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ],
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "ElderFlower Daiquiri": {
+            "base_liquor": "Rum",
+            "ingredients": "Rum(50ml), St.Germain(22.5ml), Lime Juice(10ml)",
+            "garnish": "Lime Wedge",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Rum": [
+                    "Cachaca",
+                    "Tequila"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Fantasticus": {
+            "base_liquor": "Rum",
+            "ingredients": "Italicus(30ml), Rum(25ml), Sugar Syrup(2.5ml)",
+            "garnish": "-",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Transparent",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Rum": [
+                    "Cachaca",
+                    "Tequila"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        },
+        "Tequroni": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(30ml), Apreol(30ml), Sweet Vermouth(30ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Red",
+            "technique": "Build",
+            "recipe": "",
+            "tip": "It is a cocktail similar to Negroni.",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Mexican": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(60ml), Pineapple Juice(45ml), Grenadine Syrup(5ml)",
+            "garnish": "Pineapple",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Yellow",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ]
+            }
+        },
+        "Picador": {
+            "base_liquor": "Tequila",
+            "ingredients": "Tequila(45ml), Triple Sec(22.5ml), Lime Juice(22.5ml)",
+            "garnish": "Lime Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Triple Sec": [
+                    "Cointreau",
+                    "Curacao"
+                ],
+                "Lime Juice": [
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Iguana": {
+            "base_liquor": "Tequila&Vodka",
+            "ingredients": "Tequila(15ml), Vodka(15ml), Coffee Liqueur(15ml)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Shot Glass)",
+            "color": "Brown",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Tequila": [
+                    "Mezcal",
+                    "Blanco Tequila"
+                ],
+                "Vodka": [
+                    "Gin",
+                    "White Rum"
+                ]
+            }
+        },
+        "BBC": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(30ml), Benedictine(30ml), Cream(30ml)",
+            "garnish": "Nutmeg",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ]
+            }
+        },
+        "April Shower": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(45ml), Benedictine(15ml), Orange Juice(30ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ],
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Olympic": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(30ml), Cointreau(30ml), Orange Juice(30ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ],
+                "Cointreau": [
+                    "Triple Sec",
+                    "Grand Marnier"
+                ],
+                "Orange Juice": [
+                    "Pineapple Juice",
+                    "Lemon Juice"
+                ]
+            }
+        },
+        "Zoom": {
+            "base_liquor": "Cognac",
+            "ingredients": "Cognac(60ml), Honey(15ml), Cream(30ml)",
+            "garnish": "Cocoa Powder",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "White",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Shake to form enough.",
+            "substitutes": {
+                "Cognac": [
+                    "Brandy",
+                    "Armagnac"
+                ]
+            }
+        },
+        "Fancy Free": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Whiskey(60ml), Luxardo(12.5ml), Angostura Bitters(3 dashes), Orange Bitters(2 dashes)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Rock Glass)",
+            "color": "Orange",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Whiskey": [
+                    "Bourbon",
+                    "Rye Whiskey"
+                ]
+            }
+        },
+        "Mountain": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Whiskey(60ml), Dry Vermouth(22.5ml), Sweet Vermouth(22.5ml), Egg White",
+            "garnish": "Maraschino Cherries",
+            "alcohol_strength": "Middle",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Orange",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "Shake to form enough.",
+            "substitutes": {
+                "Whiskey": [
+                    "Bourbon",
+                    "Rye Whiskey"
+                ],
+                "Sweet Vermouth": [
+                    "Dry Vermouth",
+                    "Sherry"
+                ]
+            }
+        },
+        "Opening Shot": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Whiskey(30ml), Sweet Vermouth(15ml), Grenadine Syrup(5ml)",
+            "garnish": "-",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Shot Glass)",
+            "color": "Red",
+            "technique": "Shaking",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Whiskey": [
+                    "Bourbon",
+                    "Rye Whiskey"
+                ],
+                "Sweet Vermouth": [
+                    "Dry Vermouth"
+                ]
+            }
+        },
+        "Revolver": {
+            "base_liquor": "Whiskey",
+            "ingredients": "Whiskey(60ml), Coffee Liqueur(15ml), Orange Bitters(2 dashes), Sugar Syrup(2.5ml)",
+            "garnish": "Orange Peel",
+            "alcohol_strength": "High",
+            "glass": "Short Drink(Cocktail Glass)",
+            "color": "Black",
+            "technique": "Stir",
+            "recipe": "",
+            "tip": "",
+            "substitutes": {
+                "Whiskey": [
+                    "Bourbon",
+                    "Rye Whiskey"
+                ],
+                "Sugar Syrup": [
+                    "Simple Syrup",
+                    "Agave Syrup"
+                ]
+            }
+        }
+    }
+]

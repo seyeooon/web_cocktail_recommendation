@@ -1,0 +1,82 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'community/styles.css' %}">
+</head>
+<body>
+        <!-- Navigation Bar -->
+        <header>
+            <div class="navbar">
+                <div class="title">
+                    <h1><a href="{% url 'main_page' %}" class="title-link">Shake & Enjoy</a></h1>
+                </div>
+                <div class="nav-links">
+                    {% if user.is_authenticated %}
+                        <!-- 마이페이지로 이동하는 username 버튼 -->
+                        <a href="{% url 'my_page' %}" class="nav-item">[ {{ user.username }} ]</a>
+    
+                        <!-- 로그아웃 버튼을 POST 요청으로 유지 -->
+                        <form method="POST" action="{% url 'logout' %}" class="logout-form">
+                            {% csrf_token %}
+                            <button type="submit" class="nav-item logout-button">Logout</button>
+                        </form>
+                    {% else %}
+                        <!-- 로그인 상태가 아닐 때 -->
+                        <a href="{% url 'login_page' %}" class="nav-item">Login</a>
+                    {% endif %}
+                    
+                    <a href="{% url 'general_community' %}" class="nav-item">Community</a>
+                    <a href="{% url 'search_page' %}" class="nav-item">Search</a>
+                    <a href="{% url 'search_page' %}" class="nav-item">
+                        <img src="{% static 'main/search_icon.png' %}" alt="Search Icon" class="search-icon">
+                    </a>
+                </div>
+            </div>
+        </header>
+    <!-- 이미지 추가 -->
+    <div class="community-image">
+            <img src="{% static 'community/community_image.png' %}" alt="Community Image" class="community-img">
+    </div>
+
+    <section>
+        <h2>Community Discussions</h2>
+        <p style="font-size: 14px; color: #dacac7;">Give various ideas about cocktails</p>
+
+
+        <!-- 댓글 작성 폼 -->
+        <form method="POST" action="{% url 'add_comment' %}">
+            {% csrf_token %}
+            <input type="text" name="title" placeholder="The title of the comment" required><br>
+            <textarea name="content" placeholder="The content of the comment" required></textarea><br>
+            <button type="submit">Add Comment</button>
+        </form>
+
+
+        <!-- 기존 댓글 목록 -->
+        <ul>
+            {% for comment in comments %}
+            <li class="comment-box">
+                <strong>{{ comment.title }}</strong><br>
+                {{ comment.content }}<br>
+                User: {% if comment.user %} {{ comment.user.username }} {% else %} Unknown {% endif %} / Date: {{ comment.created_at }}
+                
+                <!-- 삭제 버튼을 누구나 볼 수 있게 수정 -->
+                <form method="POST" action="{% url 'delete_general_comment' comment.id %}">
+                    {% csrf_token %}
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <footer class="footer">
+        <p>The current page is 'General Community'.<br>Each cocktail community is located at the bottom of each cocktail's detail page.</p>
+    </footer>
+</body>
+</html>

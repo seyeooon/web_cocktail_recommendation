@@ -1,0 +1,56 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Shake & Enjoy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Montserrat 폰트 불러오기 -->
+    <link rel="stylesheet" href="{% static 'login/styles.css' %}">
+</head>
+<body>
+    <!-- 회원가입 폼 영역 -->
+    <div class="login-container">
+        <h1>Sign Up</h1>
+
+        <form method="POST" class="login-form">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required placeholder="Enter a username">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="password1">Password:</label>
+                <input type="password" name="password1" id="password1" required placeholder="Enter your password">
+            </div>
+
+            <div class="form-group">
+                <label for="password2">Confirm Password:</label>
+                <input type="password" name="password2" id="password2" required placeholder="Confirm your password">
+            </div>
+
+            <button type="submit" class="login-button">Sign Up</button>
+        </form>
+
+        <!-- 회원가입 실패 메시지 -->
+        {% if form.errors %}
+        <div class="error-messages">
+            <ul>
+                {% for field in form %}
+                    {% for error in field.errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* Body and General Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+    background-color: #8B6D67; /* 배경색 설정 */
+    color: #dacac7; /* 기본 글자 색상 */
+    letter-spacing: 2px; /* 자간 간격 추가 */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* 배경 투명하게 */
+}
+
+.title {
+    margin: 0;
+    font-size: 28px;
+    color: #dacac7; /* 제목 글자색 설정 */
+    text-align: center;
+    text-decoration: none;
+}
+
+.title-link {
+    color: #dacac7;  /* 글자 색을 제목과 동일하게 설정 */
+    text-decoration: none;  /* 언더라인 제거 */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #dacac7; /* 링크 글자색 설정 */
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* 검색 아이콘 스타일 */
+.search-icon {
+    width: 24px; /* 아이콘 크기 조정 */
+    height: 24px;
+    cursor: pointer; /* 클릭 가능 표시 */
+}
+/* 로그아웃 버튼 스타일을 nav-item과 동일하게 설정 */
+.logout-button {
+    color: #dacac7; /* 로그아웃 버튼 텍스트 색상 */
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+    font-size: 18px; /* 글자 크기 */
+    background: none; /* 배경 없음 */
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 클릭 가능 표시 */
+    padding: 0;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+    background-color: #8B6D67;
+}
+.ingredient-list {
+    list-style-type: none; /* 리스트 앞의 점을 제거 */
+    padding: 0;
+}
+
+.ingredient-list li {
+    line-height: 1.8; /* 줄 간격을 넓게 설정 */
+    margin-bottom: 10px; /* 각 항목 사이 간격 추가 */
+}
+.separator {
+    border: none;
+    border-top: 2px solid #dacac7;
+    margin: 20px 0;
+}
+
+/* Recipe List Styling */
+.recipe-list {
+    list-style-type: none;  /* 리스트 앞 번호 제거 */
+    padding-left: 20px;     /* 리스트 왼쪽 여백 */
+}
+
+.recipe-list li {
+    margin-bottom: 10px;    /* 각 리스트 항목 사이 간격 */
+    white-space: normal;    /* 텍스트 줄바꿈을 허용 */
+    word-break: break-word; /* 단어가 너무 길면 줄바꿈 */
+}
+
+
+/* Section Styling (칵테일 상세 정보 영역) */
+section {
+    padding: 20px;
+    background-color: #8B6D67;
+    color: #dacac7;
+    text-align: center;      /* 텍스트 가운데 정렬 */
+    max-width: 600px;        /* 내용의 최대 너비 */
+    margin: 0 auto;          /* 좌우 중앙 정렬 */
+    display: flex;
+    flex-direction: column;  /* 세로 정렬 */
+    justify-content: center; /* 수직 가운데 정렬 */
+    /* height: calc(100vh - 80px); /* 화면 높이에서 헤더 높이를 뺀 값 설정 */
+    height: auto; /* 고정된 높이 제거 */
+    padding-bottom: 100px; /* 하단 여백 추가 */
+}
+
+/* Cocktail Image Styling */
+.cocktail-image {
+    width: 175px;  /* 이미지 크기 조정 */
+    height: auto;
+    margin: 50px auto 20px auto;  /* 위쪽에 여백 추가, 가운데 정렬 */
+    display: block;  /* 이미지를 블록 요소로 설정 */
+}
+
+section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 2px; /* 자간 간격 추가 */
+}
+
+section p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 2;  /* 줄간 간격 조정 */
+    letter-spacing: 2px; /* 자간 간격 추가 */
+}
+
+/* Substitutes Box Styling */
+.substitutes-box {
+    /*border: 2px solid #dacac7; /* 박스 테두리 */
+    padding: 20px; /* 박스 안쪽 여백 */
+    margin-top: 30px; /* 위에도 여백 추가 */
+    background-color: #75554f; /* 박스 배경색 */
+    margin-bottom: 0px; /* 박스 아래 여백 추가 */
+}
+
+/* Substitutes List Styling */
+.substitutes-list {
+    list-style-type: none; /* 리스트 앞 점 제거 */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.substitutes-list li {
+    margin-bottom: 10px; /* 각 항목 간격 추가 */
+    font-size: 18px;
+    color: #dacac7; /* 리스트 글자색 */
+    letter-spacing: 2px; /* 자간 간격 추가 */
+}
+
+.underline {
+    
+    border-bottom: 1px solid #dacac7;
+    padding-bottom: 5px; /* 밑줄과 텍스트 사이의 간격 조정 */
+}
+
+/* 음악 추천 박스 스타일 */
+.music-recommendations-box {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #75554f;
+    /*border-radius: 8px;*/
+}
+
+.music-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.music-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.music-link{
+    text-decoration: none;
+    color: #dacac7;
+}
+.music-link:hover{
+    text-decoration: underline;
+}
+
+.music-note {
+    font-size: 12px; /* 작은 글씨 크기 설정 */
+    color: #dacac7; /* 텍스트 색상 */
+    margin-top: 10px; /* 위쪽 여백 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+.community-button-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.community-button {
+    background-color: #896A65;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.community-button:hover {
+    background-color: #75554f;
+}

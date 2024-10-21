@@ -1,0 +1,233 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake & Enjoy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Montserrat 폰트 불러오기 -->
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="title">
+                <h1><a href="{% url 'main_page' %}" class="title-link">Shake & Enjoy</a></h1>
+            </div>
+            <div class="nav-links">
+                {% if user.is_authenticated %}
+                    <!-- 마이페이지로 이동하는 username 버튼 -->
+                    <a href="{% url 'my_page' %}" class="nav-item">[ {{ user.username }} ]</a>
+
+                    <!-- 로그아웃 버튼을 POST 요청으로 유지 -->
+                    <form method="POST" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="nav-item logout-button">Logout</button>
+                    </form>
+                {% else %}
+                    <!-- 로그인 상태가 아닐 때 -->
+                    <a href="{% url 'login_page' %}" class="nav-item">Login</a>
+                {% endif %}
+                
+                <a href="{% url 'general_community' %}" class="nav-item">Community</a>
+                <a href="{% url 'search_page' %}" class="nav-item">Search</a>
+                <a href="{% url 'search_page' %}" class="nav-item">
+                    <img src="{% static 'main/search_icon.png' %}" alt="Search Icon" class="search-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="background-section">
+            <img src="{% static 'main/main_image.png' %}" alt="Main Background Image" class="background-img">
+            <div class="overlay-text">
+                <p>Enjoy your cocktail with recommendations</p>
+            </div>
+        </div>
+        <div class="category-section">
+            <h2>Recommended Cocktails For You</h2>
+            {% if not user.is_authenticated %}
+                <p class="login-message">- Log in to access personalized cocktail recommendations and enhance your experience.</p>
+            {% endif %}
+            <div id="personalized-grid" class="grid-container"></div>
+        </div>
+        <div class="category-section">
+            <h2>Spirits</h2>
+            <div class="category-buttons">
+                <button onclick="filterByCategory('Rum')">Rum</button>
+                <button onclick="filterByCategory('Vodka')">Vodka</button>
+                <button onclick="filterByCategory('Gin')">Gin</button>
+                <button onclick="filterByCategory('Whiskey')">Whiskey</button>
+                <button onclick="filterByCategory('Tequila')">Tequila</button>
+                <button onclick="filterByCategory('Liqueur')">Liqueur</button>
+            </div>
+            <!-- Spirits 그리드뷰 -->
+            <div id="spirits-grid" class="grid-container"></div>
+        </div>
+        
+        <!-- Proof Section -->
+        <div class="category-section">
+            <h2>Proof</h2>
+            <div class="category-buttons">
+                <button onclick="filterByCategory('Low')">Low</button>
+                <button onclick="filterByCategory('Middle')">Middle</button>
+                <button onclick="filterByCategory('High')">High</button>
+            </div>
+            <!-- Proof 그리드뷰 -->
+            <div id="proof-grid" class="grid-container"></div>
+        </div>
+        
+        <!-- Technique Section -->
+        <div class="category-section">
+            <h2>Technique</h2>
+            <div class="category-buttons">
+                <button onclick="filterByCategory('Shaking')">Shaking</button>
+                <button onclick="filterByCategory('Stir')">Stir</button>
+                <button onclick="filterByCategory('Build')">Build</button>
+            </div>
+            <!-- Technique 그리드뷰 -->
+            <div id="technique-grid" class="grid-container"></div>
+        </div>
+    
+        <!-- JavaScript to handle category selection and grid update -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('/recommend_personalized_cocktails/', {
+                    method: 'GET',
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Data received:', data);  // 데이터를 콘솔에 출력
+                    const grid = document.getElementById('personalized-grid');
+                    grid.innerHTML = '';  // 그리드 초기화
+                    data.cocktails.forEach(cocktail => {
+                        const item = document.createElement('div');
+                        item.classList.add('grid-item');
+            
+                        let imagePath = '';
+                        if (cocktail.glass.includes('Martini Glass')) {
+                            imagePath = '{% static "main/martini_glass.png" %}';
+                        } else if (cocktail.glass.includes('Rock Glass')) {
+                            imagePath = '{% static "main/rock_glass.png" %}';
+                        } else if (cocktail.glass.includes('Cocktail Glass')) {
+                            imagePath = '{% static "main/cocktail_glass.png" %}';
+                        } else if (cocktail.glass.includes('Highball Glass')) {
+                            imagePath = '{% static "main/highball_glass.png" %}';
+                        } else {
+                            imagePath = '{% static "main/rock_glass.png" %}';
+                        }
+            
+                        item.innerHTML = `
+                            <img src="${imagePath}" alt="${cocktail.glass}" class="glass-image">
+                            <form method="POST" action="/cocktail/${encodeURIComponent(cocktail.name)}/">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="${getCookie('csrftoken')}">
+                                <button type="submit" class="cocktail-button">
+                                    <h3>${cocktail.name}</h3>
+                                </button>
+                            </form>
+                            <p>Spirits: ${cocktail.base_liquor}</p>
+                            <p>Proof: ${cocktail.alcohol_strength}</p>
+                        `;
+            
+                        grid.appendChild(item);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);  // 에러가 발생했을 경우 로그 출력
+                });
+            });
+            
+            function getCookie(name) {
+                let cookieValue = null;
+                if (document.cookie && document.cookie !== '') {
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        const cookie = cookies[i].trim();
+                        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+        
+            function filterByCategory(category) {
+                let gridId;
+        
+                // 카테고리에 따라 그리드 ID를 설정
+                if (['Rum', 'Vodka', 'Gin', 'Whiskey', 'Tequila', 'Liqueur'].includes(category)) {
+                    gridId = 'spirits-grid';  // Spirits 그리드
+                } else if (['Low', 'Middle', 'High'].includes(category)) {
+                    gridId = 'proof-grid';  // Proof 그리드
+                } else if (['Shaking', 'Stir', 'Build'].includes(category)) {
+                    gridId = 'technique-grid';  // Technique 그리드
+                }
+        
+                fetch('/recommend_cocktails/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'X-CSRFToken': getCookie('csrftoken')
+                    },
+                    body: new URLSearchParams({ 'category': category })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        throw new Error(data.error);
+                    }
+        
+                    const grid = document.getElementById(gridId);
+                    grid.innerHTML = '';  // 기존 그리드 내용 초기화
+                    data.cocktails.forEach(cocktail => {
+                        const item = document.createElement('div');
+                        item.classList.add('grid-item');
+        
+                        let imagePath = '';
+                        if (cocktail.glass.includes('Martini Glass')) {
+                            imagePath = '{% static "main/martini_glass.png" %}';
+                        } else if (cocktail.glass.includes('Rock Glass')) {
+                            imagePath = '{% static "main/rock_glass.png" %}';
+                        } else if (cocktail.glass.includes('Cocktail Glass')) {
+                            imagePath = '{% static "main/cocktail_glass.png" %}';
+                        } else if (cocktail.glass.includes('Highball Glass')) {
+                            imagePath = '{% static "main/highball_glass.png" %}';
+                        }
+                        else {
+                            imagePath = '{% static "main/rock_glass.png" %}';
+                        }
+        
+                        // 이미지 태그 추가 (이미지 있을 때만 표시)
+                        if (imagePath) {
+                            item.innerHTML += `<img src="${imagePath}" alt="${cocktail.glass}" class="glass-image">`;
+                        }
+        
+                        // 칵테일 이름 클릭 시 POST 방식으로 상세 페이지로 이동
+                        item.innerHTML += `
+                            <form method="POST" action="/cocktail/${encodeURIComponent(cocktail.name)}/">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="${getCookie('csrftoken')}">
+                                <button type="submit" class="cocktail-button">
+                                    <h3>${cocktail.name}</h3>
+                                </button>
+                            </form>
+                            <p>Spirits: ${cocktail.base_liquor}</p>
+                            <p>Proof: ${cocktail.alcohol_strength}</p>`;
+                            
+                        grid.appendChild(item);  // 해당 그리드에 추가
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("Error fetching data: " + error.message);
+                });
+            }
+        </script>
+        
+</body>
+</html>

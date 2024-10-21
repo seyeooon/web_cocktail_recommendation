@@ -1,0 +1,194 @@
+/* Body and General Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+    background-color: #8B6D67; /* 배경색 설정 */
+    color: #dacac7; /* 기본 글자 색상 */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* 배경 투명하게 */
+}
+
+.title {
+    margin: 0;
+    font-size: 28px;
+    color: #dacac7; /* 제목 글자색 설정 */
+    text-align: center;
+    text-decoration: none;
+}
+
+.title-link {
+    color: #dacac7;  /* 글자 색을 제목과 동일하게 설정 */
+    text-decoration: none;  /* 언더라인 제거 */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #dacac7; /* 링크 글자색 설정 */
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* 검색 아이콘 스타일 */
+.search-icon {
+    width: 24px; /* 아이콘 크기 조정 */
+    height: 24px;
+    cursor: pointer; /* 클릭 가능 표시 */
+}
+
+
+/* 로그아웃 버튼 스타일을 nav-item과 동일하게 설정 */
+.logout-button {
+    color: #dacac7; /* 로그아웃 버튼 텍스트 색상 */
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+    font-size: 18px; /* 글자 크기 */
+    background: none; /* 배경 없음 */
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 클릭 가능 표시 */
+    padding: 0;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+    background-color: #8B6D67;
+    
+}
+
+
+
+/* 리스트뷰 스타일 */
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: #8B6D67;
+}
+.search-result-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.search-result-item .result-details {
+    color: #dacac7;
+    line-height: 1.6;
+}
+.search-result-item .result-details h3 {
+    margin: 0;
+    font-size: 20px;
+}
+.search-result-item .result-details p {
+    margin: 5px 0;
+}
+.highlight {
+    background-color: #75554f;  /* 검색된 값을 강조 */
+    font-weight: bold;
+}
+.additional-info {
+    color: #dacac7;
+}
+/* Body and General Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: #8B6D67; /* 페이지 전체 배경색 */
+    color: #dacac7; /* 기본 글자 색상 */
+}
+
+/* 검색바 섹션 스타일 */
+.search-section {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+/* 검색 입력 필드 스타일 */
+#search-input {
+    width: 50%; /* 필드 너비 설정 */
+    padding: 15px; /* 내부 여백 설정 */
+    font-size: 18px; /* 텍스트 크기 */
+    border: 5px solid #dacac7; /* 테두리 색상 */
+    border-radius: 5px; /* 테두리 둥글게 */
+    background-color: #8B6D67; /* 배경색을 페이지와 맞춤 */
+    color: #dacac7; /* 글자색 */
+    box-sizing: border-box; /* 패딩 포함하여 너비 계산 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+#search-input::placeholder {
+    color: #dacac7; /* placeholder 텍스트 색상 설정 */
+    opacity: 0.5; /* 기본적으로 낮은 투명도를 1로 변경 */
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 700;
+}
+/* 검색 입력 필드 포커스 스타일 */
+#search-input:focus {
+    outline: none; /* 포커스 시 테두리 없음 */
+    border-color: #dacac7; /* 포커스 시 테두리 색상 */
+}
+
+/* 검색 입력 필드 호버 시 스타일 */
+#search-input:hover {
+    outline: none;
+    border-color: #dacac7; /* 호버 시 테두리 색상 */
+}
+
+h2 {
+    font-size: 30px;
+    color: #dacac7;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2;
+}
+
+h3{
+    color: #dacac7;
+    font-family: 'Montserrat', sans-serif;  /* Montserrat 폰트 적용 */
+    font-weight: 300;  /* Light 버전 사용 */
+    background-color: #8B6D67; /* 배경색 설정 */
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8B6D67;
+    color: #dacac7;
+    border: none;
+    cursor: pointer;
+}
+
+
+h3:hover {
+    text-decoration: underline;
+}
+
+
+li{
+    margin-top: 20px;
+    font-size: 20px;
+    list-style: none;
+}
